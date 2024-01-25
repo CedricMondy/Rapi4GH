@@ -51,7 +51,7 @@ get_gh_info <- function(owner, repo, endpoint, query = NULL, auth_user = NULL, a
             stringr::str_split(x, ",") %>%
               `[[`(1) %>%
               `[`(stringr::str_detect(., pattern = "next")) %>%
-              stringr::str_remove_all(pattern = "<|>|; rel=\"next\"")
+              stringr::str_remove_all(pattern = "<|>|; rel=\"next\"|\\s")
           }
         })
 
