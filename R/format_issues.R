@@ -3,7 +3,7 @@
 #' @param info_issues A nested list resulting from the call of get_gh_infos on
 #'   the issues endpoint
 #'
-#' @returna  data frame with 9 columns: `author`, `url`, `title`, `body`, number of comments (`nb_comments`), actual `state` of the issues and dates at which the issues were `opened` and `closed`.
+#' @return a data frame with 9 columns: `author`, `url`, `title`, `body`, number of comments (`nb_comments`), actual `state` of the issues and dates at which the issues were `opened` and `closed`.
 #' @export
 #'
 #' @importFrom dplyr tibble `%>%`
