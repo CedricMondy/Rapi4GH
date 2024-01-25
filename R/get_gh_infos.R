@@ -12,6 +12,7 @@
 #' @export
 #'
 #' @importFrom httr GET authenticate content
+#' @importFrom dplyr `%>%`
 get_gh_info <- function(owner, repo, endpoint, query = "", auth_user = NULL, auth_pswd = NULL) {
   url_api <- paste0("https://api.github.com/repos/", owner, "/", repo, "/", endpoint)
 
